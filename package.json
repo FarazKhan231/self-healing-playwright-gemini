@@ -8,6 +8,8 @@
     },
     "dependencies": {
         "@google/generative-ai": "^0.3.0",
+        "axios": "^1.11.0",
+        "cors": "^2.8.5",
         "dotenv": "^16.3.1",
         "express": "^4.18.2",
         "node-fetch": "^3.3.1",
@@ -15,5 +17,21 @@
     },
     "devDependencies": {
         "@playwright/test": "^1.46.0"
-    }
+    },
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FarazKhan231/self-healing-playwright-gemini.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/FarazKhan231/self-healing-playwright-gemini/issues"
+    },
+    "homepage": "https://github.com/FarazKhan231/self-healing-playwright-gemini#readme",
+    "description": ""
 }

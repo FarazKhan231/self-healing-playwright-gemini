@@ -1,3 +1,5 @@
 {
-    "loginButton": "#wrong-login-btn"
+    "loginButton": "#wrong-login-btn",
+    "usernameField": "#wrong-username-field",
+    "passwordField": "#wrong-password-field"
   }

@@ -1,0 +1,29 @@
+[
+  {
+    "testName": "Login with invalid username",
+    "fixedLocators": [],
+    "generatedTestCases": [
+      {
+        "testCases": "**Playwright Test Case – Login with Invalid Username on SauceDemo**\n\n1. **Navigate to the application**  \n   Open the browser and go to `https://www.saucedemo.com/`.  \n\n2. **Verify the login page loads**  \n   Check that the URL contains `/` and that the page title is “Swag Labs”.  \n\n3. **Locate the username input field**  \n   Find the element with selector `#user-name` (the username textbox).  \n\n4. **Enter an invalid username**  \n   Type an arbitrary string that is not a valid SauceDemo user (e.g., `wronguser` or `invalid_user123`).  \n\n5. **Locate the password input field**  \n   Find the element with selector `#password`.  \n\n6. **Enter any password**  \n   Type a password such as `Password123` (the value is irrelevant for this test).  \n\n7. **Locate and click the login button**  \n   Find the button with selector `#login-button` and click it.  \n\n8. **Wait for the error message to appear**  \n   Await the visibility of the element with selector `.error-message-container`.  \n\n9. **Verify the error message content**  \n   Confirm that the displayed text contains the string “Epic sadface: Username and password do not match any user in this service” (or the equivalent localized message).  \n\n10. **Ensure no navigation occurs**  \n    Assert that the current URL still ends with `/` (the login page is still displayed).  \n\n11. **Clear the username field**  \n    Select all text in `#user-name`, delete it, and verify the field is empty.  \n\n12. **Optionally, verify the presence of a “Reset Password” link**  \n    Check that there is a link with the text “Forgot your password?” (if present on the page).  \n\n13. **Close the browser**  \n    End the test by closing the browser context/page.  \n\n---  \n\n*Repeat this sequence for any other usernames you want to test (e.g., different case, leading/trailing spaces, special characters) to fully cover the invalid‑username scenario.*"
+      }
+    ]
+  },
+  {
+    "testName": "Login with invalid password",
+    "fixedLocators": [],
+    "generatedTestCases": [
+      {
+        "testCases": "1. Open a new browser page and navigate to https://www.saucedemo.com/  \n2. In the “Username” input field, enter the valid username: `standard_user`  \n3. In the “Password” input field, enter an invalid password: `wrong_password`  \n4. Click the “Login” button (or press Enter while focused on the password field)  \n5. Verify that an error message element appears below the password field  \n6. Check that the error message text is exactly: `Your password is invalid!`  \n7. Confirm that the error message element is styled with the expected error highlight (e.g., red border)  \n8. Verify that the browser has **not** navigated away from the login page (URL remains `https://www.saucedemo.com/`)  \n9. Ensure that the “Inventory” product listing page is **not** displayed  \n10. Verify that the “Username” field still contains `standard_user` after the failed login attempt  \n11. Verify that the “Password” field is cleared (empty) or retains the input, as per the application's behavior  \n12. Optionally, click the “Logout” button if it appears (should not be visible), confirming the user is still not logged in  \n13. Close the browser page."
+      }
+    ]
+  },
+  {
+    "testName": "Login with blank credentials",
+    "fixedLocators": [],
+    "generatedTestCases": [
+      {
+        "testCases": "**Test Case: Login with Blank Credentials on SauceDemo**\n\n1. Open a browser and navigate to **https://www.saucedemo.com/**.  \n2. Verify the page title contains **“Swag Labs”**.  \n3. Confirm that the login form is visible with **Username** and **Password** input fields and the **LOGIN** button.  \n4. Leave the **Username** input field empty (do not type anything).  \n5. Leave the **Password** input field empty (do not type anything).  \n6. Click the **LOGIN** button.  \n7. Verify that an error banner appears above the form.  \n8. Verify that the error banner’s text reads **“Epic sadface: Username is required”** (or the equivalent localized message).  \n9. Verify that the user remains on the **Swag Labs** login page (no redirect to the inventory page).  \n10. Verify that the **LOGIN** button is still enabled (allowing further attempts).  \n11. Close the browser (or navigate back to the homepage if required for cleanup)."
+      }
+    ]
+  }
+]
